@@ -1,0 +1,16 @@
+<!-- ======= Banner Section ======= -->
+  <section id="hero" class="d-flex align-items-center {% if page.layout != 'default'  %} innerhero {% endif %}" 
+  {% if page.layout == "default"}  %} style="background-image: url({{ page.hero.image }});" {% endif %}>
+  		<div class="container herotxt">
+			<div class="row">
+				<div class="col-xl-9">
+					<h1> {{ page.hero.heading }}</h1>
+					<h2 class="">{{ page.hero.subHeading }}</h2>
+					<p>{{ page.hero.text }}</p>
+					<!-- <section id="section10" class="demo">
+					  <a href="{{ page.hero.btnUrl }}"><span></span>{{ page.hero.btnText }}</a>					
+					</section> -->
+				</div>
+			</div>
+		</div>
+  </section>

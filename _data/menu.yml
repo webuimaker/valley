@@ -1,0 +1,12 @@
+main:
+  - name: Welcome                                             
+    url: "#hero"
+  - name: Process
+    url: "#howsection"
+  - name: Service
+    url: "#services"
+  - name: Examples
+    url: "#solutions"
+  - name: Contact
+    url: "#contact"
+    

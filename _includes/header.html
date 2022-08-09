@@ -1,0 +1,43 @@
+	<!-- ======= Header ======= -->
+  <nav id="navbar_top" class="navbar navbar-expand-lg fixed-top">
+  	<div class="container">
+    <a class="navbar-brand" href="{% if page.layout != 'default'  %}/{% endif %}{{ item.url }}#hero">
+      {% if site.logo %}
+      <img src="{{site.logo}}" class="img-fluid" alt="Calnetic"> 
+      {% else %}
+      {{ site.title}}
+    {% endif %} </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><img src="assets/img/mobnav.png" alt="" class="img-fluid"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mt-2 mt-md-0 ms-md-auto">
+        {% for item in site.data.menu.main %}
+          {% if item.child %}
+            <li class="dropdown">
+                <a href="{% if page.layout != 'default'  %}/{% endif %}{{ item.url }}"><span>{{ item.name }}</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                    {% for childitem in item.child  %}
+                            <li><a href="{{ childitem.url }}">{{ childitem.name }}</a></li>
+                        {% endfor %}
+                </ul>
+            </li>                
+            {% else %}
+              <li class="nav-item">
+                <a class="nav-link scrollto {% if item.url == page.url %} active {% endif %}" href="{% if page.layout != 'default'  %}/{% endif %}{{ item.url }}" aria-current="page">{{ item.name }}</a>
+              </li>  
+          {% endif %}
+      {% endfor %}  
+      </ul>
+	  
+	  <div class="social-top d-none">
+	  	<ul>
+			<li><a href="#"><img src="assets/img/linkedin-white.png" class="img-fluid" alt=""></a></li>
+			<li><a href="#"><img src="assets/img/fb-white.png" class="img-fluid" alt=""></a></li>
+			<li><a href="#"><img src="assets/img/skype-white.png" class="img-fluid" alt=""></a></li>
+		</ul>
+	  </div>
+    </div>
+  </div>
+	</nav><!-- End Header -->

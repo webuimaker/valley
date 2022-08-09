@@ -1,0 +1,25 @@
+<!-- ======= Footer Section ======= -->
+<footer class="footer pb-2">
+        <div class="container">
+          <p class="pt-4"><img src="/assets/img/footer-logo.svg" class="img-fluid foot-logo" alt=""></p>
+          <div class="row">
+              <div class="col-md-6 order-2 order-md-1">&copy; Copyright - Calnetic Inc</div>
+              <div class="col-md-6 order-1 order-md-2">
+                <ul>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+
+
+                
+                  {% if site.social.site.enable %}
+                  <ul>
+                      
+                      {% for socials in site.social.items %}
+                      <li><a href="{{socials.link}}"><img src="{{socials.icon}}" class="img-fluid" alt="{{socials.title}}"> </a></li>
+                      {% endfor %}
+                  </ul>
+                  {% endif %}
+              </div>
+          </div>
+      </div>
+</footer>
+<!-- ======= Footer Section ======= -->

@@ -1,0 +1,245 @@
+title: valley start consultants
+email: your-email@example.com
+# logo: "/assets/img/White-&-Orange-Dot-Horizontal-Logo-2.svg"
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://calnetic-gordan.github.io/calneticwebsite/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+home:
+  how:
+    enabled: false
+    background: "#fff"
+    heading: "How we get you where you want to be"
+    smallHeading: ""
+    items:
+    - heading: >
+       WE EMBRACE  YOUR VISION
+      body: > 
+        We listen carefully to your vision, goals and challenges. Knowing where you are and where you want to be is crucial in our developing the right custom solution
+      url: 
+      urlText: "View more"
+    - heading: >
+       IT’S ALL IN THE PLAN
+      body: > 
+        Informed and empowered by understanding your situation and needs, we then plan your custom solution. You’ll know, from the get-go, what the solution is, how it will work, and when each step in creating it will happen
+      url: 
+      urlText: "View more"
+    - heading: >
+       DELIVERING YOUR CUSTOM SOLUTION
+      body: > 
+        Our software expertise and decades of hands-on experience coding, building and developing thousands of solutions now go into full-throttle to turn your goals and dreams into reality
+      url: 
+      urlText: "View more"
+  services:
+    enabled: false
+    background: "#fff"
+    heading: "How our services work for you"
+    smallHeading: ""
+    items:
+    - heading: "SaaS and Web Applications"
+      image: "assets/img/sass.png"
+      body: > 
+        Our solution will help you provide the best services to your customers.
+      url: 
+      urlText: "View more"
+    - heading: "Mobile apps"
+      body: > 
+        No matter where your staff or customers are, they’ll be as close as your App on their device.
+      image: "assets/img/mobileapps.png"
+      url: 
+      urlText: "View more"
+    - heading: "Business Process"
+      body: > 
+        Enhance your operation, speed delivery time and increase profits by fully automating those costly labor-intensive tasks.
+      image: "assets/img/businessprocess.png"
+      url: 
+      urlText: "View more"
+    - heading: "Systems Integrations"
+      body: > 
+        We can integrate your systems that lower your costs while ending manual entries and the errors that go with them.
+      image: "assets/img/system-integration.png"   
+      url: 
+      urlText: "View more"
+  solutions:
+    enabled: true
+    background: "#fff"
+    heading: "A wide range of clients. <span>and solutions.</span>"
+    smallHeading: ""
+    items:
+    - heading: "Case Study 1: SAAS web application for startup"
+      image: "assets/img/Portfolio1.png"
+      body: > 
+        This application was designed and developed as a real-time, crowdsourced brainstorming tool that lets you gather insights and input from marketers, entrepreneurs, creators and innovative thinkers. <br><br>We implemented full Video, audio and chat integration (for up to 5 participants at a time), as well as a live shareable whiteboard, file sharing and much more. The app has full payment integration and scheduled payouts that utilizes both stripe and paypal platforms.
+      url: 
+      urlText: "View more"
+    - heading: "Case Study 2: SAAS Mobile app for startup"
+      body: > 
+       The Tern app lets you schedule your returns for when it works for your schedule. With one click, the goods are on their way back to the merchant and money is on its way back into your account. No traffic, no lines to wait in, no problem.
+      image: "assets/img/Portfolio2.png"
+      url: 
+      urlText: "View more"
+    - heading: "Case Study 3: Client portal for established business"
+      body: > 
+        This project was developed for our client to enable them to quickly and easily manage critical business information and share it with their customers, including data, geolocations, documents and photos. <br><br>Each of the clients customers have a secure login to the portal to access their specific sites and information within each site. <br><br>There is an admin module to for the business owners to manage their information, and a read only role for external users and client rep
+      image: "assets/img/Portfolio3.png"
+      url: 
+      urlText: "View more"
+      urlText: "View more"
+  team:
+    enabled: true
+    background: "#fff"
+    heading: "How our services work for you"
+    smallHeading: ""    
+    items:
+    - name: "Brett"
+      position: "CEO - HyperIQ"
+      image: "assets/img/team-1bg.png"
+      body: > 
+        Calnetic was terrific to work with. They were knowledgeable, timely and easy to work with. Highly recommended!!
+      url: 
+      urlText: "View more"
+    - name: "Rob"
+      position: "CEO - SO Investment Services"
+      image: "assets/img/team-2bg.png"
+      body: > 
+        My team would recommend Calnetic to others. They had the skills we required and completed the project as the scope of work defined. Calnetic was thorough and built a solid foundation for the project which allowed for scale, saving time and costs
+      url: 
+      urlText: "View more"
+    - name: "Chris"
+      position: "CEO - DS Education and tools"
+      image: "assets/img/team-1bg.png"
+      body: > 
+        Having limited programming skills myself, I had no choice but to trust Calnetic with the entirety of the project from conceptual phase, to an industry-leading (paid) product for our members
+      url: 
+      urlText: "View more"
+      urlText: "View more"
+  about:
+    enabled: false
+    background: "#fff"
+    heading: "About Us"
+    smallHeading: ""    
+    image: "assets/img/digital-cyberspace-and-data-network-connections-1.png"
+    body: > 
+      Whether you need a web app, SaaS, mobile app, business process application, or a system integration, we have been working on your software solution for well over two decades. In fact, we’ve been developing software solutions longer than many of today’s software technologies have been around. So we not only grew with the software industry, we also helped it to grow.<br><br>This is how we’re able to bring a uniquely rich depth of experience and understanding of how to listen — truly listen — to a client’s needs in order to deliver the precise solution to build the solution to meet their goals.<br><br>Isn’t this the kind of approach and the kind of professionals you want to solve your software needs? Then let’s talk — after all, we’ve been working on your solution for many years. Which means your business’s transformation is a lot closer than you think.
+  mission:
+    enabled: false
+    background: "#fff"
+    heading: "Our Mission."
+    smallHeading: ""    
+    image: "assets/img/digital-cyberspace-and-data-network-connections-1.jpg"
+    body: > 
+      Our entire careers have been dedicated to providing the best software solutions to companies whose very success could depend upon how effectively our software helps them to achieve their goals. This is why our Mission has always been — and continues to be — to dedicate all of our skills, our expertise, drive and commitment to the goal of helping each client successfully transform their business, and the world.
+
+  contact:
+    enabled:
+    background: "#FAFBFD"
+    image: "assets/images/book.png"
+    heading: "<span>Book a</span> Discovery Call"
+    smallHeading: ""
+    description: >
+     All successful businesses in every industry are continually investing in improving their business processes and implementing software to stay current and get ahead of their competition.<br>
+     
+     Are you thinking of implementing a software into your business, or are you in the middle of a software project? Thinking of documenting or improving your business processes?<br>
+
+     If either of those questions apply to you, book a 30 minute strategy call, and let's discuss how I can help. We will go over your current business and I will walk you through my methodology and how it can help you achieve your goals no matter where you are in the digital transformation journey.
+
+    btnText: "yes, i want to <strong>work</strong> with <strong>neil</strong>"
+    btnUrl: "#"
+  subscribe:
+    enabled: true
+    background: "#F8F9FC"
+    heading: "Subscribe our Newslatter"
+    smallHeading: "what’s next?"
+    description: Get notification about tips, new product and exclusive promo news just for you.
+
+
+
+
+
+footer:
+  copyright: © 2021 Onix All rights reserved.
+  about: Build custom blogs, portfolios, ecommerce stores, and more with a flexible CMS. Experience the power of HTML, CSS.
+  leftcolHeading: Links
+  centercolHeading:  "About"
+  rightcolHeading: "Our Office"
+  leftcol:
+  - link: "/"
+    text: Home
+  - link: "/"
+    text: Services
+  - link: "/"
+    text: How It Works
+  - link: "/"
+    text: Tutorial
+  - link: "/"
+    text: Contact
+  centercol:
+  - text: Partners
+    link: "#home"
+    pageType: "same"
+  - text: Careers
+    link: "#how-its-works"
+    pageType: "same"
+  - text: Press
+    link: "#about"
+    pageType: "same"
+  - text: Community
+    link: "#about"
+    pageType: "Community"
+  rightcol:
+  - location: Indonesia
+    address: Jl. Griya Permata Hijau no D1 Purwomartani Kalasan 543881
+  - location: Tokyo
+    address: 35 Mandalay Road 13–37 Mandalay Towers Singapore 308215
+
+
+social:
+  enable: 
+  items:
+  - icon: "assets/img/linkedin.svg"
+    title: "linkedin"
+    link: "#"
+  - icon: "assets/img/facebook.svg"
+    title: "facebook"
+    link: "#"
+  - icon: "assets/img/skype.svg"
+    title: "skype"
+    link: "#"
+
+      
+
+ 
+
+sass:
+  sass_dir: _sass
+  style: compressed # possible values: nested expanded compact compressed
+
+# Build settings
+// theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

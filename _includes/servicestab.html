@@ -1,0 +1,105 @@
+{% assign data = site.home.services %}
+
+   
+  <!-- ======= Services Tab Section ======= -->
+  <section class="servicestab section-gap" id="services">
+	{% if data.enabled %} 
+  	 <div class="container">
+	 	<div class="row text-center">
+			<div class="col-md-12"><h2> {{data.heading}}</h2> <h6>{{data.smallHeading}}</h6></div>
+		</div>
+
+		
+		
+		<div class="row display-none-mob">
+			<div class="col-md-12">
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+					{% for item in data.items %}
+						<li class="nav-item" role="presentation">
+							<button class="nav-link {% if forloop.first  %} active {% endif %}" id="{{item.heading  | downcase | remove: " " }}-tab" data-bs-toggle="pill" data-bs-target="#{{item.heading  | downcase | remove: " " | remove: " " }}" type="button" role="tab" aria-controls='{{item.heading  | downcase | remove: " " | remove: " " }}' aria-selected="{% if forloop.first  %}true{% else %}false {% endif %}">{{item.heading  }}</button>
+						</li>
+
+					{% endfor %}
+				</ul>
+				<div class="tab-content" id="pills-tabContent">
+					{% for item in data.items %}
+						<div class="tab-pane fade  {% if forloop.first  %} show active {% endif %}" id='{{item.heading  | downcase | remove: " " }}' role="tabpanel" aria-labelledby="{{item.heading  | downcase | remove: " " }}-tab">
+							<div class="row align-items-center">
+								{% assign mod = forloop.index | modulo: 2 %}
+								<div class="col-lg-6 col-md-6 align-items-center {% if mod == 0 %} order-2 {% endif %}">
+									<img src="{{ item.image }}" class="img-fluid" alt="{{ item.heading }}">
+								</div>
+								
+								<div class="col-lg-6 col-md-6 align-items-center">
+									<p>{{ item.body }} </p>
+									{% if  item.url %}
+									<a href="{{item.url}}">
+										{{item.urlText}} <img src="assets/img/arrow-right.png" class="img-fluid" alt="{{item.heading}}">
+									</a>	
+									{% endif %}	
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				  
+				</div>
+
+			</div>
+		</div>
+		
+		<div class="carouselnew">
+				<div class="owl-two owl-theme">
+			 			<div class="item">
+							<h2>SaaS and Web Applications</h2>
+							<div class="row align-items-center">
+						<div class="col-lg-6 col-md-6 align-items-center"><img src="assets/img/sass.png" class="img-fluid" alt=""></div>
+						<div class="col-lg-6 col-md-6 align-items-center">
+							<p>Our solution will help you provide the best services to your customers.</p>
+							<a href="#">View more <img src="assets/img/arrow-right.png" class="img-fluid" alt=""></a>
+						</div>
+					</div>
+           				 </div>
+                         
+            			<div class="item">
+							<h2>Mobile Apps</h2>
+							<div class="row align-items-center">
+						<div class="col-lg-6 col-md-6 align-items-center"><p>No matter where your staff or customers are, they’ll be as close as your App on their device.</p>
+							<a href="#">View more <img src="assets/img/arrow-right.png" class="img-fluid" alt=""></a></div>
+						<div class="col-lg-6 col-md-6 align-items-center">
+							<img src="assets/img/mobileapps.png" class="img-fluid" alt="">
+						</div>
+					</div>
+           				 </div>
+                         
+            			<div class="item">
+							<h2>Business Process Automation</h2>
+							<div class="row align-items-center">
+						<div class="col-lg-6 col-md-6 align-items-center"><img src="assets/img/businessprocess.png" class="img-fluid" alt=""></div>
+						<div class="col-lg-6 col-md-6 align-items-center">
+							<p>Enhance your operation, speed delivery time and increase profits by fully automating those costly labor-intensive tasks.</p>
+							<a href="#">View more <img src="assets/img/arrow-right.png" class="img-fluid" alt=""></a>
+						</div>
+					</div>
+           				 </div>
+						 
+						 <div class="item">
+						 	<h2>System Integrations</h2>
+							<div class="row align-items-center">
+						<div class="col-lg-6 col-md-6 align-items-center"><p>We can integrate your systems that lower your costs while ending manual entries and the errors that go with them.</p>
+							<a href="#">View more <img src="assets/img/arrow-right.png" class="img-fluid" alt=""></a></div>
+						<div class="col-lg-6 col-md-6 align-items-center">
+							<img src="assets/img/system-integration.png" class="img-fluid" alt="">
+						</div>
+					</div>
+           				 </div>
+					</div>
+			</div>
+	 </div>
+	 {% endif %}
+
+	 
+	 {% include solutions.html %}
+
+  </section>
+  <!-- ======= Services Tab Section ======= -->
+ 

@@ -1,0 +1,21 @@
+{% assign data = site.home.mission %}
+
+{% if data.enabled %} 
+<!-- ======= Our Mission Section ======= -->
+<section class="container-fluid missionsection">
+    <div class="row">
+      <div class="col-md-6 p-0">
+          <div class="bluebox">
+              <h3>{{data.heading}}</h3>
+              <div class="mobimg"><img src="{{data.image}}" class="img-fluid" alt=""></div>
+              <p>{{data.body}}</p>
+              <div class="missionbg"><img src="assets/img/mission-bg.svg" class="img-fluid" alt=""></div>
+          </div>
+      </div>
+      <div class="col-md-6 p-0 mobnone">
+          <div class="img-right"><img src="{{data.image}}" class="img-fluid" alt=""></div>
+      </div>
+  </div>
+</section>
+<!-- ======= Our Mission Section ======= -->
+{% endif %}

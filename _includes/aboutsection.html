@@ -1,0 +1,35 @@
+{% assign data = site.home.about %}
+
+{% if data.enabled %}
+<!-- ======= About Us Section ======= -->
+  <section class="aboutsection section-gap">
+  	<div class="aboutbg"><img src="assets/img/aboutbg.svg" class="img-fluid" alt=""></div>
+  	<div class="container">
+		<div class="about-title">
+			<h2>{{data.heading}}</h2>
+			<p>{{data.body}}</p>
+		</div>
+		
+		<div class="row mt-5 d-none">
+			<div class="col-md-4 mb-5 mb-lg-0">
+				<figure><img src="assets/img/about-team-1.png" class="img-fluid" alt=""></figure>
+				<h5 class="text-center">George Cox</h5>
+				<h4 class="text-center">CEO - CALNETIC</h4>
+			</div>
+			
+			<div class="col-md-4 mb-5 mb-lg-0">
+				<figure><img src="assets/img/about-team-2.png" class="img-fluid" alt=""></figure>
+				<h5 class="text-center">Katherine Berry</h5>
+				<h4 class="text-center">CEO - CALNETIC</h4>
+			</div>
+			
+			<div class="col-md-4 mb-5 mb-lg-0">
+				<figure><img src="assets/img/about-team-3.png" class="img-fluid" alt=""></figure>
+				<h5 class="text-center">Amy Johnson</h5>
+				<h4 class="text-center">CEO - CALNETIC</h4>
+			</div>
+		</div>
+	</div>
+  </section>
+  <!-- ======= About Us Section Ends ======= -->
+  {% endif %}
